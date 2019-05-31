@@ -2,7 +2,6 @@
 var multer = require('multer');
 var path = require('path');
 var moment = require('moment');
-const Storage = require('@google-cloud/storage');
 const storage = new Storage({
   projectId: 'My First Project',
   keyFilename: 'config/My First Project-14b55a6edafc.json'
