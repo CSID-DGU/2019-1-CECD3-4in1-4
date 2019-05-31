@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="file_box">
+                <h2>search file upload</h2>
+                <form action="/file/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" name="imgFile" id = "imgFile">
+                    <input type="submit" value="파일 업로드">
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="file_box">
+                <h2>
+                    search result
+                </h2>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.file_box{
+    margin: 20px 0;
+    padding: 20px;
+    border-style: dashed;
+    border: 2px solid rgb(231, 231, 231);;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    color: rgb(94, 94, 94);
+    min-height: 500px;
+}
+
+.file_box h2{
+    text-align: center;
+}

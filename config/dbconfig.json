@@ -1,0 +1,23 @@
+{
+  "local": {
+    "host": "15.164.67.187",
+    "user": "root",
+    "password": "MinorityElite!",
+    "port": "3306",
+    "database": "FourInOne"
+  },
+  "server": {
+    "host": "localhost",
+    "user": "root",
+    "password": "MinorityElite!",
+    "port": "3306",
+    "database": "FourInOne"
+  },
+  "real": {
+    "host": "localhost",
+    "user": "root",
+    "password": "MinorityElite!",
+    "port": "3306",
+    "database": "FourInOne"
+  }
+}
