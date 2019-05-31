@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var fileRouter = require('./routes/file/fileImage.js');
 
+const bucket = storage.bucket('shopingram');
 var app = express();
 
 const port = 80;
@@ -32,6 +33,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/file', fileRouter);
+
+
+
 
 // error handler
 app.use(function(err, req, res, next) {

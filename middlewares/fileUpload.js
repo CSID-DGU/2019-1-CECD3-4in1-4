@@ -2,20 +2,19 @@
 var multer = require('multer');
 var path = require('path');
 var moment = require('moment');
-
+const Storage = require('@google-cloud/storage');
+const storage = new Storage({
+  projectId: 'My First Project',
+  keyFilename: 'config/My First Project-14b55a6edafc.json'
+});
 //fileInfo: path, namePrefix, viewNames
 module.exports = (fileInfo) => {
   var storage = multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, fileInfo.path);
     }, filename: (req, file, cb) => {
-      cb(null, moment().format('YYYYMMDDHHmmss') + file.originalname);
+      cb(null, file.originalname);
     }
-  });
-
-
-  router.post('/', upload.single('user_file'), function(req, res, next){
-
   });
 
   var viewNameArray = new Array(fileInfo.viewNames.length);
@@ -30,3 +29,5 @@ module.exports = (fileInfo) => {
     multipartForm: multipartForm
   };
 };
+
+

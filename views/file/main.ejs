@@ -19,7 +19,19 @@
                     <input type="file" name="imgFile" id = "imgFile">
                     <input type="submit" value="파일 업로드">
                 </form>
+                <table>
+                    <tbody>
+                    <!-- 프로젝트 조회 -->
+                    <% for(var i = 0; i < fileInfo.length; i++) {%>
+                        <tr>
+                            <td><%= fileInfo[i].file_name %> </td>
+                        </tr>
+
+                    <% } %>
+                    </tbody>
+                </table>
             </div>
+
         </div>
         <div class="col-sm-6">
             <div class="file_box">
